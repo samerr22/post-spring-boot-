@@ -113,8 +113,7 @@ const handleComment = async (postId, commentText) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ comment: commentText }), // Remove userId from the body
-    });
+      body: JSON.stringify({ comment: commentText }), 
     if (res.ok) {
       alert("success")
       window.location.reload()
